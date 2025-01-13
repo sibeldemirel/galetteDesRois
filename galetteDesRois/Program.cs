@@ -70,9 +70,12 @@ class Program
 
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"{roi} a trouvé la fève !");
+        Console.ResetColor();
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("*********************************************************");
         Console.WriteLine($"Longue vie à {roi} !");
         Console.WriteLine("*********************************************************");
+        Console.ResetColor();
         Console.WriteLine($"{roi} va maintenant vous couper la tête. Merci d'avoir participé !");
         Console.ReadKey();
     }
